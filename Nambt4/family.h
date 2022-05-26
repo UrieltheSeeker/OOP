@@ -2,12 +2,14 @@
 #define FAMILY_H
 
 #include "person.h"
+#include <vector>
 
 class family : public person
 {
 private:
-    int family_member_num;
     int house_num;
+    vector<person*> people;
+    person *ptrPerson;
 
 public:
     void getinf() override;
